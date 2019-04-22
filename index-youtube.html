@@ -179,15 +179,43 @@
         <!-- Start Header -->
         
         <section id="home-cont" class="home1 home">
-            <div class="zoominheader bg-image">
-                <div class="overlay"></div>
-                <div class="zoomoutheader"></div>
-            </div>
-            <div class="title">
-                <h1 class="text-uppercase"><strong>Reva</strong> Smith</h1>
-                <p class="type"></p>  <!-- You Can Edit the title on the custom.js File -->
-                <div class="btn-home">
-                    <a href="#work-cont">Portfolio</a>
+            <div class="youtube"> 
+                <div class="title">
+                    <h1 class="text-uppercase"><strong>Reva</strong> Smith</h1>
+                    <p class="type"></p>  <!-- You Can Edit the title on the custom.js File -->
+                    <div class="btn-home">
+                        <a href="#work-cont">Portfolio</a>
+                    </div>
+                </div>
+                <div class="overlay-video">
+                    <div id="bg-video">
+                        <script async src="https://www.youtube.com/iframe_api"></script>
+                        <script>
+                         function onYouTubeIframeAPIReady() {
+                          var player;
+                          player = new YT.Player('bg-video', {
+                            videoId: 'gbrkMDkHRqc', // YouTube Video ID
+                            playerVars: {
+                              autoplay: 1,        // Auto-play the video on load
+                              list: "PL6q9nZDPOFMdP2h4aH2Gmbr4VHJZWCkua",  // Run the playlist
+                              controls: 0,        // Show pause/play buttons in player
+                              showinfo: 0,        // Hide the video title
+                              modestbranding: 1,  // Hide the Youtube Logo
+                              loop: 1,            // Run the video in a loop
+                              fs: 0,              // Hide the full screen button
+                              cc_load_policy: 0,  // Hide closed captions
+                              iv_load_policy: 3,  // Hide the Video Annotations
+                              autohide: 1         // Hide video controls when playing
+                            },
+                            events: {
+                              onReady: function(e) {
+                                e.target.mute();
+                              }
+                            }
+                          });
+                         }
+                        </script>
+                    </div>
                 </div>
             </div>
         </section>

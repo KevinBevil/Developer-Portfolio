@@ -29,51 +29,6 @@
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
-        
-        <script>
-            // Ajax function
-            
-            function _(id) {
-
-                return document.getElementById(id);
-
-            }
-
-            function submitForm() {
-
-                _("btn").disabled = true;
-                _("status").innerHTML = 'please wait ...';
-
-                var formdata = new FormData(),
-                    ajax = new XMLHttpRequest();
-
-                formdata.append("name", _("name").value);
-                formdata.append("email", _("email").value);
-                formdata.append("phone", _("phone").value);
-                formdata.append("subject", _("subject").value);
-                formdata.append("msg", _("msg").value);
-
-                ajax.open("POST", "contact.php");
-                ajax.onreadystatechange = function () {
-
-                    if (ajax.readyState === 4 && ajax.status === 200) {
-
-                        if (ajax.responseText === "success") {
-
-                            _("my_form").innerHTML = '<h2>Thanks ' + _("name").value + ',<br> <br> your message has been sent.</h2>';
-
-                        } else {
-
-                            _("status").innerHTML = ajax.responseText;
-                            _("btn").disabled = false;
-
-                        }
-                    }
-                };
-
-                ajax.send(formdata);
-            }
-        </script>
     </head>
     <body>
         
@@ -178,10 +133,10 @@
         
         <!-- Start Header -->
         
-        <section id="home-cont" class="home1 home">
-            <div class="zoominheader bg-image">
+        <section id="home-cont" class="home2 home">
+            <div class="skewed">
                 <div class="overlay"></div>
-                <div class="zoomoutheader"></div>
+                <div class="my-bg bg-image"></div>
             </div>
             <div class="title">
                 <h1 class="text-uppercase"><strong>Reva</strong> Smith</h1>
