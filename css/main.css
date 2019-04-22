@@ -979,7 +979,7 @@ section.close-menu {
 
 /* Start Particles Background */
 .home .particles {
-  background-image: url(http://via.placeholder.com/4000x3500);
+  background-image: url("../images/landscape-4124096.jpg");
   /* Here You Can Edit the image of Header (Background Particles)  */
   background-size: cover;
   background-repeat: no-repeat;
