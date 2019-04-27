@@ -719,7 +719,7 @@ section:not(:first-of-type) {
     z-index: 1;
     height: 80px; }
     .navbar .logo .bg_logo {
-      background-image: url(http://via.placeholder.com/60x60);
+      background-image: url(../images/HeadShot6060.jpg);
       /* Here The Logo */
       background-size: 50px;
       background-repeat: no-repeat;
@@ -1086,7 +1086,7 @@ section.close-menu {
 .about .container {
   overflow: hidden; }
 .about .about-img {
-  background-image: url(http://via.placeholder.com/3000x1500);
+  background-image: url("../images/laptop3000-1500.jpg");
   /* Here You can edit your personal image */
   height: 350px;
   width: 85%;
