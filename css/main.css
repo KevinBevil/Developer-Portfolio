@@ -58,6 +58,9 @@
 	Mixins
 	------------------------------------------------
 */
+iframe {
+  max-width: 100%;
+}
 @font-face {
   font-family: 'icons';
   src: url("../fonts/icons.eot?un9a1c");
