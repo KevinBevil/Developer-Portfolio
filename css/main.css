@@ -1302,7 +1302,9 @@ section.close-menu {
       left: 20px;
       text-align: left; }
       .work .gallery .item .over .info-img h4 {
-        font-size: 34px;
+        margin-top: 40px;
+        margin-left: 30px;
+        font-size: 24px;
         margin-bottom: -3px; }
       .work .gallery .item .over .info-img span {
         font-size: 17px;
